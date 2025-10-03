@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Data files (large)
+*.csv
+*.tsv
+*.txt
+*.gz
+*.tar
+*.zip
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# OS specific
+.DS_Store
+Thumbs.db
