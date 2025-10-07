@@ -1,54 +1,38 @@
 # PCA and UMAP analysis of RNA-seq datasets
 
-Учебный проект по анализу bulk RNA-seq и scRNA-seq данных.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)]()
+[![scikit-learn](https://img.shields.io/badge/sklearn-PCA-yellow.svg)](https://scikit-learn.org/)
+[![scanpy](https://img.shields.io/badge/Scanpy-UMAP-green.svg)](https://scanpy.readthedocs.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Датасеты
-- **Bulk RNA-seq**: HL-60 cell line, [GSE184891](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184891)
-- **scRNA-seq**: AML patient samples, [GSE116256](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116256)
+A simple analysis of bulk RNA-seq and scRNA-seq datasets using PCA and UMAP.  
+The project focuses on QC, visualization, clustering, and interpretation of biological replicates and groups.
 
-## Цели проекта
-- Провести QC анализ bulk RNA-seq на HL-60 с помощью PCA
-- Проверить сходимость реплик
-- Для scRNA-seq построить UMAP и кластеризацию
-- Сделать выводы о различиях между группами
+## Datasets
+- **Bulk RNA-seq**: HL-60 cell line — [GSE184891](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184891)
+- **scRNA-seq**: AML patient samples — [GSE116256](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116256)
 
-## Использованные методы
-- PCA (sklearn)
-- UMAP (scanpy)
-- Визуализация (matplotlib, seaborn)
+## Goals
+- Perform QC analysis on bulk RNA-seq data using PCA
+- Check consistency of biological replicates
+- Cluster scRNA-seq data using UMAP
+- Identify differences between cell groups
 
-## Запуск
-1. Установите зависимости:
-   ```bash
-   pip install -r requirements.txt
-## Запустите ноутбук:
-   ```bash
-   jupyter notebook Practice_PCA_bulk_RNA_seq_scRNA_seq.ipynb
+## Methods
+- PCA via `scikit-learn`
+- UMAP and clustering via `scanpy`
+- Visualization using `matplotlib` and `seaborn`
 
-# PCA and UMAP analysis of RNA-seq datasets
-
-PCA and UMAP analysis of bulk RNA-seq (HL-60, GSE184891) and scRNA-seq (AML, GSE116256) data.  
-QC, visualization, clustering, and interpretation of results.
-
-## 📘 Datasets
-- **Bulk RNA-seq**: HL-60 cell line, [GSE184891](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184891)
-- **scRNA-seq**: AML patient samples, [GSE116256](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116256)
-
-## 🔬 Project goals
-- Perform QC analysis of bulk RNA-seq using PCA
-- Assess replicates consistency
-- Apply UMAP for scRNA-seq data and visualize clusters
-- Draw conclusions about group differences
-
-## 📊 Methods
-- PCA (scikit-learn)
-- UMAP (scanpy / umap-learn)
-- Visualization (matplotlib, seaborn)
-
-## 🚀 How to run
+## How to Run
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
-## Launch the notebook:
+   ```
+2. Launch the notebook:
    ```bash
    jupyter notebook Practice_PCA_bulk_RNA_seq_scRNA_seq.ipynb
+   ```
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
